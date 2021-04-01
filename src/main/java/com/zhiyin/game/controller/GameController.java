@@ -27,7 +27,7 @@ public class GameController {
     private CellTools cellTools;
 
     /**
-     *  获取地图数据11111
+     *  获取地图数据
      * @param request
      * @param response
      * @return
