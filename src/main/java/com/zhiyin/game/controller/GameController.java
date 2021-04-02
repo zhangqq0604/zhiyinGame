@@ -27,7 +27,8 @@ public class GameController {
     private CellTools cellTools;
 
     /**
-     *  获取地图数据
+     * 获取地图数据
+     *
      * @param request
      * @param response
      * @return
@@ -46,11 +47,11 @@ public class GameController {
         do {
             thief = cellTools.getThief(bank);
             police = cellTools.getPolice(bank);
-        }while (thief.get("x").equals(police.get("x")));
+        } while (thief.get("x").equals(police.get("x")));
         Map resultMap = new HashMap();
-        resultMap.put("mapInfo",bank);
-        resultMap.put("thief",thief);
-        resultMap.put("police",police);
+        resultMap.put("mapInfo", bank);
+        resultMap.put("thief", thief);
+        resultMap.put("police", police);
         return JSONObject.toJSONString(resultMap);
     }
 }
